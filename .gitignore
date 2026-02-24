@@ -1,0 +1,16 @@
+# Ignore the data folder completely
+data/
+*.csv
+
+# BUT allow the tiny sample file so people can test the API
+!sample_test_data.csv
+
+# Environments and Cache
+venv/
+env/
+clvenv/
+__pycache__/
+*.pyc
+
+# the model data 
+model_data/
