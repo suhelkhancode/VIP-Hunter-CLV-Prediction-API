@@ -4,8 +4,8 @@ import pandas as pd
 import io
 
 # The URLs where your FastAPI backend is listening
-API_URL_BATCH = "http://127.0.0.1:8000/predict/vip_batch"
-API_URL_SINGLE = "http://127.0.0.1:8000/predict/single"
+API_URL_BATCH = "https://vip-hunter-api.onrender.com/predict/vip_batch"
+API_URL_SINGLE = "https://vip-hunter-api.onrender.com/predict/single"
 
 # --- Page Config ---
 st.set_page_config(page_title="VIP Hunter", page_icon="🎯", layout="centered")
