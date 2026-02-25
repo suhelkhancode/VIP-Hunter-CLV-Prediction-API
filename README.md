@@ -2,6 +2,11 @@
 
 **VIP Hunter** is a professional-grade Machine Learning SaaS application designed to identify high-value customers from raw retail data. It features a complete data pipeline—from raw CSV cleaning to real-time API predictions—packaged in a modern Streamlit dashboard.
 
+### 🌐 Live Application
+**Try it out right now:** [Click here to launch the VIP Hunter Web App](https://vip-hunter.streamlit.app/)
+
+*(Note: The backend API is hosted on a free Render tier. If it has been asleep, the very first prediction might take ~45 seconds to wake the server up. All subsequent predictions will be instant!)*
+
 ---
 
 ## 🚀 The Product
