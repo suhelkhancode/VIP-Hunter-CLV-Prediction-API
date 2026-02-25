@@ -3,6 +3,8 @@ from fastapi.responses import StreamingResponse
 from pydantic import BaseModel 
 import pandas as pd
 import io
+import uvicorn 
+import os 
 
 from cleaning import clean_raw_retail_data
 from feature_engineering import engineer_customer_features
@@ -67,3 +69,7 @@ async def process_vip_batch(file: UploadFile = File(...)):
     except Exception as e:
         # Catch and display any pipeline errors (like missing columns in the upload)
         raise HTTPException(status_code=500, detail=f"Error processing file: {str(e)}")
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
