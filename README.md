@@ -94,7 +94,7 @@ The FastAPI server must be running for the frontend to work.
 ```bash
 uvicorn main:app --reload
 ```
-### Once running, you can access the interactive API documentation at http://127.0.0.1:8000/docs.
+Once running, you can access the interactive API documentation at http://127.0.0.1:8000/docs.
 
 ## 2. Launch the Dashboard
 Open a second terminal window, ensure your virtual environment is activated, and run:
